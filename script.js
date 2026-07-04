@@ -1,5 +1,5 @@
-const player1Input = document.getElementById("player-1");
-const player2Input = document.getElementById("player-2");
+const player1Input = document.getElementById("player1");
+const player2Input = document.getElementById("player2");
 
 const submitButton = document.getElementById("submit");
 
@@ -14,7 +14,7 @@ let player1 = "";
 let player2 = "";
 
 let currentPlayer = "";
-let currentSymbol = "X";
+let currentSymbol = "x";
 
 let gameOver = false;
 
@@ -93,14 +93,13 @@ cells.forEach((cell,index)=>{
             return;
         }
 
-        if(currentSymbol==="X"){
+        if(currentSymbol==="x"){
 
-            currentSymbol="O";
+            currentSymbol="o";
             currentPlayer=player2;
-
         }else{
 
-            currentSymbol="X";
+            currentSymbol="x";
             currentPlayer=player1;
 
         }
